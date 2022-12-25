@@ -1,3 +1,4 @@
+#đây là ý a
 print("Nhập số để chọn chức năng bạn muốn dùng \n Số 1: Mở file danh sách mobile \n Số 2: Nhập thông tin điện thoại từ bàn phím, không nhập tổng tiền và thuế VAT \n Số 3: Tính VAT của các mặt hàng \n Số 4: Lưu danh sách các điện thoại \n Số 5: Sắp xếp các của hàng và in ra danh sách trước và sau sắp xếp")
 def chuc_nang_1():
     return "chuc nang 1"
