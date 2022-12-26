@@ -1,9 +1,3 @@
-#Quản lý hóa đơn
-import csv
-#from csv import reader
-_path="files/ds_mobile.csv"
-List_mobile=[]
-
 #mở và tạo file
 import csv
 _path="D:/NHOM11/files/ds_mobile.csv"
