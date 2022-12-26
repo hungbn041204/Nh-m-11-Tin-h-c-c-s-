@@ -8,7 +8,7 @@ List_mobile=[]
 def luu_ds_hoa_don(_path,List_mobile):
     try:
         f=open(_path,'w+',newline='', encoding = 'utf-8')
-        csv.writer(f).writerow(['Mã điện thoại','Tên điện thoại','đơn giá','Số Lượng','Chất lượng','Thuế VAT','Tổng tiền','tam_ung','con_lai'])
+        csv.writer(f).writerow(['Mã điện thoại','Tên điện thoại','đơn giá','Số Lượng','Chất lượng','Thuế VAT','Tổng tiền'])
         for hd in List_mobile:
             csv.writer(f).writerow([hd['Mã điện thoại'],hd['Tên điện thoại'], hd['đơn giá'],hd['Số lượng'],hd['Chất lượng'],hd['Thuế VAT'],hd['Tổng tiền']])
         f.close()
