@@ -16,10 +16,7 @@ def luu_ds_hoa_don(_path,List_mobile):
     except Exception as ex1:
         return 0
 #Hàm xóa thiết bị có chứa thuế VAT
-def xoa_thiet_bi(lstthietbi):
-    for i in range(len(lstthietbi)):
-        tb=lstthietbi[i]
-        if tb['so_tb']==sotb:
-            del(lstthietbi[i])
-            return 1
-    return 0
+vat = < giá trị mong muốn >
+if VAT > vat:
+   VAT.clear
+return none
