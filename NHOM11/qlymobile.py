@@ -3,7 +3,7 @@ import os, csv
 _path="files/ds_mobile.csv"
 lstmobile=[]
 
-def mo_file_hoa_don(_path,lstmobile):
+def mo_file_mobile(_path,lstmobile):
     try:
         f=open(_path,'w', encoding ='utf-8')
         for dong in csv.reader(f):
@@ -29,11 +29,11 @@ def luu_ds_mobile(_path,lstHoaDon):
 
 def them_hoa_don(lstmobile):
     while True:
-        ma_dt = input('Nhập số hóa đơn: ')
-        ten_dt=input('Ngày hóa đơn: ')
-        don_gia=input('Họ tên khách hàng: ')
-        so_luong=input('Địa chỉ khách hàng: ')
-        chat_luong=input('Quận : ')
+        ma_dt = input('Nhập số mã điện thoại: ')
+        ten_dt=input('Nhập tên điện thoại: ')
+        don_gia=input('Nhập đơn giá: ')
+        so_luong=input('Nhập số lượng: ')
+        chat_luong=input('Nhập chất lượng: ')
         lstmobile.append({'ma_dt':ma_dt,'ten_dt':ten_dt,\
              'don_gia':don_gia,'so_luong':so_luong,'chat_luong':chat_luong}) 
         tt=input('Bạn có muốn tiếp tục thêm ? (1:TT)')
@@ -53,7 +53,7 @@ print("+--------------------------------------------------+")
 chucnang = int(input("Nhập chức năng bạn muốn chọn(1->5)"))
 
 if chucnang==1:
-    mo_file_hoa_don(_path,lstmobile)
+    mo_file_mobile(_path,lstmobile)
 elif chucnang==2:
     luu_ds_mobile(_path,lstmobile)
 elif chucnang==3:
